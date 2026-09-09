@@ -1,196 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mafi Printing Business</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mafi Printing Business</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- NAVIGATION -->
-    <header>
-        <div class="logo">
-            <a href="#home">
-                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 35 C20 25, 30 20, 40 20 L60 20 C70 20, 80 25, 80 35 L80 65 C80 75, 70 80, 60 80 L40 80 C30 80, 20 75, 20 65 Z" fill="#222222"/>
-                    <path d="M35 20 C35 15, 45 15, 65 15 L75 15 C80 15, 80 20, 80 20" fill="#222222"/>
-                    <path d="M35 48 L50 48 L65 48 M35 56 L55 56" stroke="#00D2FF" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M45 48 L60 48 M45 56 L65 56" stroke="#FF007A" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M55 48 L70 48 M55 56 L75 56" stroke="#FFD600" stroke-width="5" stroke-linecap="round"/>
-                </svg>
-                <span>MAFI</span>
-            </a>
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="logo">
+      <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="20" y="55" width="60" height="35" rx="5" fill="#1d1042"/>
+        <path d="M30 55 V35 H70 V55" stroke="#1d1042" stroke-width="6" fill="none"/>
+        <path d="M25 70 H75" stroke="#ffffff" stroke-width="4"/>
+        <path d="M15 45 Q50 35 85 45 L80 52 Q50 42 20 52 Z" fill="#00c8ff"/>
+        <path d="M15 40 Q50 30 85 40 L80 47 Q50 37 20 47 Z" fill="#ff007f"/>
+        <path d="M15 35 Q50 25 85 35 L80 42 Q50 32 20 42 Z" fill="#ffcc00"/>
+      </svg>
+      <div>
+        <span class="logo-title">MAFI</span>
+        <span class="logo-sub">Printing Business</span>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:0968493282" class="nav-phone-btn">📞 0968493282</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="tagline">HIGH QUALITY • FAST SERVICE • AFFORDABLE PRICES</p>
+        <h1>Welcome to <br><span class="highlight-yellow">Mafi Printing</span> <span class="highlight-white">Business</span></h1>
+        <p class="description">We provide high-quality printing services for paper, banners, cups, shirts, stickers, gifts and more.<br>Your ideas, our print!</p>
+        <a href="#services" class="hero-btn">View Our Services <span>→</span></a>
+      </div>
+      <div class="hero-image-box">
+        <!-- Replace hero-showcase.jpg with your composite header image -->
+        <img src="images/banner.jpg" alt="Mafi Printing Showcase" class="hero-showcase">
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Services -->
+  <section id="services" class="services-section">
+    <div class="section-title">
+      <div class="dash"></div>
+      <h2>Our Services</h2>
+      <p>We offer a wide range of printing services with high quality and fast delivery.</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <div class="service-card">
+        <img src="images/paper.jpg" alt="Paper Printing">
+        <div class="card-info">
+          <h3>Paper Printing</h3>
+          <p>Documents, assignments, reports and more.</p>
+          <a href="#contact" class="card-btn">Price: Contact us</a>
         </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+      </div>
 
-    <!-- HOME -->
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <p class="welcome">WELCOME TO</p>
-            <h1>
-                Mafi Printing<br>
-                Business
-            </h1>
-            <p>
-                Quality printing for paper, banners, cups,
-                shirts, stickers, gifts and more.
-            </p>
-            <a class="button" href="#services">
-                See Our Services
-            </a>
+      <!-- Card 2 -->
+      <div class="service-card">
+        <img src="images/banner.jpg" alt="Banner Printing">
+        <div class="card-info">
+          <h3>Banner Printing</h3>
+          <p>Custom banners for businesses and events.</p>
+          <a href="#contact" class="card-btn">Price: Contact us</a>
         </div>
-    </section>
+      </div>
 
-    <!-- SERVICES -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <p class="section-text">
-            We provide different printing and finishing services
-            according to your needs.
-        </p>
-
-        <div class="services-grid">
-
-            <!-- PAPER -->
-            <div class="service-card">
-                <img src="images/paper.jpg" alt="Paper printing">
-                <strong>Price: Black = 10 ETB | Color = 30 ETB</strong>
-                <h3>Paper Printing</h3>
-                <p>High-quality document and paper printing.</p>
-                <div class="card-location">📍 Location: Adama, Franko</div>
-                <a class="card-contact-btn" href="#contact">📞 Contact us</a>
-            </div>
-
-            <!-- BANNER -->
-            <div class="service-card">
-                <img src="images/banner.jpg" alt="Banner printing">.
-                <strong>Price: 600 ETB / sq meter</strong>
-                <h3>Banner Printing</h3>
-                <p>Custom banners for businesses, events and special occasions.</p>
-                <div class="card-location">📍 Location: Adama, Franko</div>
-                <a class="card-contact-btn" href="#contact">📞 Contact us</a>
-            </div>
-
-            <!-- T SHIRT -->
-            <div class="service-card">
-                <img src="images/tshirt.jpg" alt="T-Shirt printing">
-                <strong>Price: 400 ETB</strong>
-                <h3>T-Shirt Printing</h3>
-                <p>Custom designs printed on shirts.</p>
-                <div class="card-location">📍 Location: Adama, Franko</div>
-                <a class="card-contact-btn" href="#contact">📞 Contact us</a>
-            </div>
-
-            <!-- CUP -->
-            <div class="service-card">
-                <img src="images/cup.jpg" alt="Cup printing">
-                <strong>Price: 600 ETB</strong>
-                <h3>Cup Printing</h3>
-                <p>Personalized cups and mugs with stickers.</p>
-                <div class="card-location">📍 Location: Adama, Franko</div>
-                <a class="card-contact-btn" href="#contact">📞 Contact us</a>
-            </div>
-
-            <!-- GIFT CARD -->
-            <div class="service-card">
-                <img src="images/giftcard.jpg" alt="Gift cards">
-                <strong>Price: 50 ETB</strong>
-                <h3>Gift Cards</h3>
-                <p>Custom gift cards for different occasions.</p>
-                <div class="card-location">📍 Location: Adama, Franko</div>
-                <a class="card-contact-btn" href="#contact">📞 Contact us</a>
-            </div>
-
-            <!-- RIBBON -->
-            <div class="service-card">
-                <img src="images/ribbon.jpg" alt="Ribbon printing">
-                <strong>Price: 300 ETB</strong>
-                <h3>Ribbon Printing</h3>
-                <p>Customized ribbons for gifts and events.</p>
-                <div class="card-location">📍 Location: Adama, Franko</div>
-                <a class="card-contact-btn" href="#contact">📞 Contact us</a>
-            </div>
-
-            <!-- STICKERS -->
-            <div class="service-card">
-                <img src="images/sticker.jpg" alt="Sticker printing">
-                <strong>Price: 600 ETB / sq meter</strong>
-                <h3>Sticker Printing</h3>
-                <p>Custom stickers for businesses, products and events.</p>
-                <div class="card-location">📍 Location: Adama, Franko</div>
-                <a class="card-contact-btn" href="#contact">📞 Contact us</a>
-            </div>
-
-            <!-- LAMINATION -->
-            <div class="service-card">
-                <img src="images/lamination.jpg" alt="Lamination">
-                <strong>Price: 40 – 100 ETB</strong>
-                <h3>Lamination</h3>
-                <p>Protect your important documents with quality lamination.</p>
-                <div class="card-location">📍 Location: Adama, Franko</div>
-                <a class="card-contact-btn" href="#contact">📞 Contact us</a>
-            </div>
-
-            <!-- COPYING -->
-            <div class="service-card">
-                <img src="images/copy.jpg" alt="Copying">
-                <strong>Price: Black = 10 ETB | Color = 30 ETB</strong>
-                <h3>Copying</h3>
-                <p>Fast and clear document copying.</p>
-                <div class="card-location">📍 Location: Adama, Franko</div>
-                <a class="card-contact-btn" href="#contact">📞 Contact us</a>
-            </div>
-
+      <!-- Card 3 -->
+      <div class="service-card">
+        <img src="images/tshirt.jpg" alt="T-Shirt Printing">
+        <div class="card-info">
+          <h3>T-Shirt Printing</h3>
+          <p>Personalized designs on shirts.</p>
+          <a href="#contact" class="card-btn">Price: Contact us</a>
         </div>
-    </section>
+      </div>
 
-    <!-- GALLERY -->
-    <section id="gallery" class="gallery-section">
-        <h2>Our Work</h2>
-        <p class="section-text">Examples of our printing work.</p>
-
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="images/paper.jpg" alt="Mafi paper printing work">
-            </div>
-            <div class="gallery-item">
-                <img src="images/tshirt.jpg" alt="Mafi t-shirt printing work">
-            </div>
-            <div class="gallery-item">
-                <img src="images/cup.jpg" alt="Mafi cup printing work">
-            </div>
+      <!-- Card 4 -->
+      <div class="service-card">
+        <img src="images/cup.jpg" alt="Cup Printing">
+        <div class="card-info">
+          <h3>Cup Printing</h3>
+          <p>Customized cups and mugs.</p>
+          <a href="#contact" class="card-btn">Price: Contact us</a>
         </div>
-    </section>
+      </div>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Mafi Printing</h2>
-        <p>Need printing? Contact us today.</p>
-
-        <a class="phone-button" href="tel:0968493282">
-            📞 0968493282
-        </a>
-
-        <div class="location">
-            📍 <strong>Location:</strong> Adama, Franko
+      <!-- Card 5 -->
+      <div class="service-card">
+        <img src="images/giftcard.jpg" alt="Gift Cards">
+        <div class="card-info">
+          <h3>Gift Cards</h3>
+          <p>Beautiful custom gift cards.</p>
+          <a href="#contact" class="card-btn">Price: Contact us</a>
         </div>
-    </section>
+      </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <h3>MAFI Printing Business</h3>
-        <p>Quality printing services in Adama.</p>
-        <p>📞 0968493282</p>
-        <p>📍 Adama, Franko</p>
-        <p class="copyright">© 2026 Mafi Printing Business</p>
-    </footer>
+      <!-- Card 6 -->
+      <div class="service-card">
+        <img src="images/ribbon.jpg" alt="Ribbon Printing">
+        <div class="card-info">
+          <h3>Ribbon Printing</h3>
+          <p>For gifts, events and decorations.</p>
+          <a href="#contact" class="card-btn">Price: Contact us</a>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="service-card">
+        <img src="images/sticker.jpg" alt="Stickers Printing">
+        <div class="card-info">
+          <h3>Stickers Printing</h3>
+          <p>Custom stickers for any purpose.</p>
+          <a href="#contact" class="card-btn">Price: Contact us</a>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="service-card">
+        <img src="images/lamination.jpg" alt="Lamination">
+        <div class="card-info">
+          <h3>Lamination</h3>
+          <p>Protect your important documents.</p>
+          <a href="#contact" class="card-btn">Price: Contact us</a>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="service-card">
+        <img src="images/copy.jpg" alt="Photocopy">
+        <div class="card-info">
+          <h3>Photocopy</h3>
+          <p>Fast and clear photocopying.</p>
+          <a href="#contact" class="card-btn">Price: Contact us</a>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="service-card">
+        <div class="more-icon">•••</div>
+        <div class="card-info">
+          <h3>And More...</h3>
+          <p>We also do other printing services.</p>
+          <a href="#contact" class="card-btn">Price: Contact us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Work Gallery -->
+  <section id="gallery" class="gallery-section">
+    <div class="section-title">
+      <div class="dash"></div>
+      <h2>Our Work Gallery</h2>
+      <p>Check out some examples of our printing work.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <img src="images/paper.jpg" alt="Flyers & Paper">
+        <span class="gallery-badge">Flyers & Paper Printing</span>
+      </div>
+      <div class="gallery-card">
+        <img src="images/banner.jpg" alt="Banners">
+        <span class="gallery-badge">Banners</span>
+      </div>
+      <div class="gallery-card">
+        <img src="images/tshirt.jpg" alt="T-Shirts">
+        <span class="gallery-badge">T-Shirts</span>
+      </div>
+      <div class="gallery-card">
+        <img src="images/cup.jpg" alt="Cups">
+        <span class="gallery-badge">Cups</span>
+      </div>
+      <div class="gallery-card">
+        <img src="images/lamination.jpg" alt="Lamination">
+        <span class="gallery-badge">Lamination</span>
+      </div>
+      <div class="gallery-card">
+        <img src="images/giftcard.jpg" alt="Gift Cards">
+        <span class="gallery-badge">Gift Cards</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Banner / Contact -->
+  <footer id="contact" class="footer-section">
+    <div class="footer-container">
+      <div class="handwriting-text">Print<br>Your Ideas<br>With Us!</div>
+      
+      <div class="footer-center">
+        <h2>Contact <span class="highlight-yellow">Mafi Printing</span></h2>
+        <p>Need printing? Contact us today!</p>
+        <div class="footer-buttons">
+          <a href="tel:0968493282" class="footer-btn">📞 0968493282</a>
+          <a href="#" class="footer-btn">📍 Adama, Franko</a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="print-icon">🖨️</div>
+        <p class="features">Fast • Quality • Affordable</p>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2026 Mafi Printing Business. Quality printing services in Adama.
+    </div>
+  </footer>
 
 </body>
 </html>
